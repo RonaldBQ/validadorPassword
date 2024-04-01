@@ -9,10 +9,19 @@
 </head>
 
 <body>
-  <h1> Validador de contraseña</h1>
-  <label id="lblMessage"></label>
-  <input type="text" id="txtPass" placeholder="Ingrese su contraseña">
-  <button onclick="validatePassword()">Comprobar</button>
+  <h1>Validador de contraseña</h1>
+  <form action="" class="form">
+    <label id="info" class="infoPassword"></label>
+    <input type="text" id="txtPass" placeholder="Ingrese su contraseña">
+    <section class="rules">
+      <label class="instructions">La contraseña debe cumplir los siguientes requisitos:</label>
+      <label class="infoCondition" id="rule-1"></label>
+      <label class="infoCondition" id="rule-2"></label>
+      <label class="infoCondition" id="rule-3"></label>
+      <label class="infoCondition" id="rule-4"></label>
+    </section>
+  </form>
+  
   <script src="script.js"></script>
 </body>
 
